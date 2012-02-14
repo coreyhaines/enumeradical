@@ -28,7 +28,7 @@ NO MORE! Use Enumerable#map_to(type)
     # => [#<MyNumberPresenter:0x0000010086b9c8 @number=1>, #<MyNumberPresenter:0x0000010086b630 @number=2>,
           #<MyNumberPresenter:0x0000010086b540 @number=3>]
 
-###I have an array of objects, and I want to map them to the value they give from indexing into another object
+###I have an array of objects, and I want to map them to the value they give from indexing into another object.
 
     require 'date'
     [1,2,3].map { |index| Date::ABBR_DAYNAMES[index] } # => ["Mon", "Tue", "Wed"]
@@ -39,6 +39,31 @@ NO MORE! Use Enumerable#map_into
     [1,2,3].map_into Date::ABBR_DAYNAMES # => ["Mon", "Tue", "Wed"]
 
 
+###I have an array of objects, and I'd like to convert them using a given object's method.
+
+    class Converter
+      def hellos(times)
+        "hello"*times
+      end
+    end
+
+    converter = Converter.new
+
+    [1,2,3].map { |times| converter.hellos(times) }
+    # => ["hello", "hellohello", "hellohellohello"]
+
+NO MORE! Use Object#map_over
+
+    class Converter
+      def hellos(times)
+        "hello"*times
+      end
+    end
+
+    converter = Converter.new
+
+    converter.map_over [1,2,3], :hellos
+    # => ["hello", "hellohello", "hellohellohello"]
 
 
 ## Who built this
