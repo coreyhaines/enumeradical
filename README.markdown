@@ -65,6 +65,8 @@ NO MORE! Use Object#map_over
     converter.map_over [1,2,3], :hellos
     # => ["hello", "hellohello", "hellohellohello"]
 
+## Is this useful?
+YES!!!!! Use it.
 
 ## Who built this
 Originally, [Corey Haines](http://github.com/coreyhaines) and [Ryan Briones](http://github.com/ryanbriones)
