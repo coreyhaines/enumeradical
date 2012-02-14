@@ -1,7 +1,7 @@
+[![Build Status](https://secure.travis-ci.org/coreyhaines/enumeradical.png)](http://travis-ci.org/coreyhaines/enumeradical)
+
 # Enumeradical
 ## A most amazing collection of useful functions filling common tasks when iterating over collections
-
-[![Build Status](https://secure.travis-ci.org/coreyhaines/enumeradical.png)](http://travis-ci.org/coreyhaines/enumeradical)
 
 ## What is this?
 I love enumerable. I really do. I use the functions it provides with the utmost alacrity. Nothing makes me sadder than seeing a #each used to populate an array. Once you start using them a lot in production systems, you notice a bunch of common patterns.
