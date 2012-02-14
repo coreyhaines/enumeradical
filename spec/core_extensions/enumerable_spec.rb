@@ -1,5 +1,5 @@
 require "core_extensions/enumerable"
-Object.send :include, CoreExtensions::Object
+Object.send :include, Enumeradical::CoreExtensions::Object
 
 describe "CoreExtensions::Enumerable" do
   describe "#map_into" do

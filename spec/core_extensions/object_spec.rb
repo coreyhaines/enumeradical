@@ -2,7 +2,7 @@ require 'core_extensions/object'
 
 describe "CoreExtensions::Object" do
   class MixedIn
-    include CoreExtensions::Object
+    include Enumeradical::CoreExtensions::Object
     def multiple_by_two(number)
       number*2
     end

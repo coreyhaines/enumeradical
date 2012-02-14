@@ -1,4 +1,4 @@
-require 'core_extensions/object'
+require 'enumeradical/core_extensions/object'
 
 module Enumerable
   def map_into(into = nil)
