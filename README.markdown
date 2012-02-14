@@ -80,4 +80,4 @@ NO MORE! Use Object#map_over
 YES!!!!! Use it.
 
 ## Who built this
-Originally, [Corey Haines](http://github.com/coreyhaines) and [Ryan Briones](http://github.com/ryanbriones)
+[Corey Haines](http://github.com/coreyhaines) and [Ryan Briones](http://github.com/ryanbriones)
