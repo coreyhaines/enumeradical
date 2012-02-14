@@ -4,7 +4,7 @@
 ## What is this?
 I love enumerable. I really do. I use the functions it provides with the utmost alacrity. Nothing makes me sadder than seeing a #each used to populate an array. Once you start using them a lot in production systems, you notice a bunch of common patterns.
 
-* I have an array of objects, and I need to convert them to another type.
+###I have an array of objects, and I need to convert them to another type.
 
     class MyNumberPresenter
       def initialize(number)
