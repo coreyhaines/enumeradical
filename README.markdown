@@ -7,7 +7,12 @@
 I love enumerable. I really do. I use the functions it provides with the utmost alacrity. Nothing makes me sadder than seeing a #each used to populate an array. Once you start using them a lot in production systems, you notice a bunch of common patterns.
 
 ## How do I use it?
-Install it, then
+It is a gem, so just do
+
+    gem install enumeradical
+
+then rock the house by requiring it. It sets itself up!
+
     require 'enumeradical'
 
 ###I have an array of objects, and I need to convert them to another type.
