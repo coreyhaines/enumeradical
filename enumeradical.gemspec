@@ -7,9 +7,8 @@ Gem::Specification.new do |s|
   s.version     = Enumeradical::VERSION
   s.authors     = ["coreyhaines"]
   s.email       = ["coreyhaines@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Enumeradical takes bland enumerable functions and uses them to create AMAZINGALITY!}
+  s.description = %q{Enumeradical is a collection of useful functions for iterating over collections in common ways.}
 
   s.rubyforge_project = "enumeradical"
 
