@@ -9,7 +9,6 @@ I love enumerable. I really do. I use the functions it provides with the utmost 
     class MyNumberPresenter
       def initialize(number)
         @number = number
-        end
       end
     end
 
@@ -22,7 +21,6 @@ NO MORE! Use Enumerable#map_to(type)
     class MyNumberPresenter
       def initialize(number)
         @number = number
-        end
       end
     end
 
