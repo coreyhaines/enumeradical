@@ -81,3 +81,8 @@ YES!!!!! Use it.
 
 ## Who built this
 [Corey Haines](http://github.com/coreyhaines) and [Ryan Briones](http://github.com/ryanbriones)
+
+## License
+
+MIT. See [LICENSE](https://github.com/coreyhaines/enumeradical/blob/master/License.txt)
+
