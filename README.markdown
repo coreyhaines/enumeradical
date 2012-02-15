@@ -15,6 +15,8 @@ then rock the house by requiring it. It sets itself up!
 
     require 'enumeradical'
 
+## Why would I use it?
+
 ###I have an array of objects, and I need to convert them to another type.
 
     class MyNumberPresenter
