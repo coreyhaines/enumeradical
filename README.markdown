@@ -29,7 +29,7 @@ then rock the house by requiring it. It sets itself up!
     # => [#<MyNumberPresenter:0x0000010086b9c8 @number=1>, #<MyNumberPresenter:0x0000010086b630 @number=2>,
           #<MyNumberPresenter:0x0000010086b540 @number=3>]
 
-NO MORE! Use Enumerable#map_to(type)
+**NO MORE!** Use Enumerable#map_to(type)
 
     class MyNumberPresenter
       def initialize(number)
@@ -46,7 +46,7 @@ NO MORE! Use Enumerable#map_to(type)
     require 'date'
     [1,2,3].map { |index| Date::ABBR_DAYNAMES[index] } # => ["Mon", "Tue", "Wed"]
 
-NO MORE! Use Enumerable#map_into
+**NO MORE!** Use Enumerable#map_into
 
     require 'date'
     [1,2,3].map_into Date::ABBR_DAYNAMES # => ["Mon", "Tue", "Wed"]
@@ -65,7 +65,7 @@ NO MORE! Use Enumerable#map_into
     [1,2,3].map { |times| converter.hellos(times) }
     # => ["hello", "hellohello", "hellohellohello"]
 
-NO MORE! Use Object#map_over
+**NO MORE!** Use Object#map_over
 
     class Converter
       def hellos(times)
