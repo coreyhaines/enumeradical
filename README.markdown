@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/coreyhaines/enumeradical.png)](http://travis-ci.org/coreyhaines/enumeradical)
+[![Build Status](https://secure.travis-ci.org/coreyhaines/enumeradical.png)](http://travis-ci.org/coreyhaines/enumeradical) Builds on ALL THE RUBIES!
 
 # Enumeradical
 ## A most amazing collection of useful functions filling common tasks when iterating over collections
