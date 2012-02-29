@@ -9,6 +9,13 @@ module Enumerable
     do_map to, :new
   end
 
+  def sort_like(arr, method = nil, &block)
+    sorted = arr.map { |a|
+      find { |s| (method ? s.send(method) : Proc.new(&block).call(s)) == a }
+    }.compact
+    sorted + (self - sorted)
+  end
+
 private
   def do_map(obj, method)
     return self unless obj

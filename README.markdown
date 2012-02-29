@@ -78,6 +78,22 @@ then rock the house by requiring it. It sets itself up!
     converter.map_over [1,2,3], :hellos
     # => ["hello", "hellohello", "hellohellohello"]
 
+###I have an array of objects, and I'd like to sort them based on another enumerable.
+
+    class Thingy
+      def initialize(foo)
+        self.foo = foo
+      end
+      attr_accessor :foo
+    end
+
+    thingies = [Thingy.new("abc"), Thingy.new("def"), Thingy.new("ghi")]
+    arry = ["def", "abc", "ghi"]
+
+    thingies.sort_like(arry, :foo)
+    # OR
+    thingies.sort_like(arry) { |t| t.foo }
+
 ## Is this useful?
 YES!!!!! Use it.
 

@@ -57,5 +57,48 @@ describe "CoreExtensions::Enumerable" do
       end
     end
   end
+
+  describe "#sort_like" do
+
+    class Sortable
+      def initialize(arg)
+        self.arg = arg
+      end
+      attr_accessor :arg
+    end
+
+    before do
+      @sample_array = [Sortable.new(14), Sortable.new(24), Sortable.new(34), Sortable.new(44)]
+      @template_array = [24, 44, 14, 34]
+    end
+
+    example "sorts like the template using the given method name" do
+      sorted = @sample_array.sort_like(@template_array, :arg)
+      sorted.map(&:arg).should == @template_array
+    end
+
+    example "sorts like the template using the given block" do
+      sorted = @sample_array.sort_like(@template_array) { |x| x.arg }
+      sorted.map(&:arg).should == @template_array
+    end
+
+    example "sorts correctly even if template array includes extra items" do
+      @template_array = ([54] + @template_array + [4])
+      sorted = @sample_array.sort_like(@template_array, :arg)
+      sorted.map(&:arg).should == (@template_array - [4, 54])
+    end
+
+    example "sorts correctly even if the template array includes fewer items" do
+      @template_array = (@template_array - [14])
+      sorted = @sample_array.sort_like(@template_array) { |x| x.arg }
+      sorted.map(&:arg).should == [24, 44, 34, 14]
+    end
+
+    example "raises an error if the item doesn't respond to the given method" do
+      lambda {
+        @sample_array.sort_like(@template_array, :foo)
+      }.should raise_error(NoMethodError)
+    end
+  end
 end
 
