@@ -1,4 +1,5 @@
-[![Build Status](https://secure.travis-ci.org/coreyhaines/enumeradical.png)](http://travis-ci.org/coreyhaines/enumeradical) works on ALL THE RUBIES!
+[![Build Status](https://travis-ci.org/coreyhaines/enumeradical.svg?branch=master)](https://travis-ci.org/coreyhaines/enumeradical)
+[![Code Climate](https://codeclimate.com/github/coreyhaines/enumeradical/badges/gpa.svg)](https://codeclimate.com/github/coreyhaines/enumeradical)
 
 # Enumeradical
 ## A most amazing collection of useful functions filling common tasks when iterating over collections
