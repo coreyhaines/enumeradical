@@ -12,22 +12,22 @@ describe "CoreExtensions::Object" do
     let(:object) { MixedIn.new }
     let(:list) { [1,2,3] }
     it "maps the method over each element of the given list" do
-      object.map_over(list, :multiple_by_two).should == [2,4,6]
+      expect(object.map_over(list, :multiple_by_two)).to eq([2,4,6])
     end
 
     it "supports passing a string as the name of the method" do
-      object.map_over(list, "multiple_by_two").should == [2,4,6]
+      expect(object.map_over(list, "multiple_by_two")).to eq([2,4,6])
     end
 
     context "invalid usage" do
       it "requires a list that can be iterated over" do
-        lambda {
-        object.map_over(Object.new, :multiple_by_two).should == [2,4,6]
-        }.should raise_error(ArgumentError, "given list must support map")
+        expect {
+        expect(object.map_over(Object.new, :multiple_by_two)).to eq([2,4,6])
+        }.to raise_error(ArgumentError, "given list must support map")
       end
 
       it "returns an empty list if list is nil" do
-        object.map_over(nil, :multiple_by_two).should be_empty
+        expect(object.map_over(nil, :multiple_by_two)).to be_empty
       end
     end
   end
