@@ -18,7 +18,7 @@ then rock the house by requiring it. It sets itself up!
 
 ## Why would I use it?
 
-###I have an array of objects, and I need to convert them to another type.
+### I have an array of objects, and I need to convert them to another type.
 
     class MyNumberPresenter
       def initialize(number)
@@ -42,7 +42,7 @@ then rock the house by requiring it. It sets itself up!
     # => [#<MyNumberPresenter:0x0000010086b9c8 @number=1>, #<MyNumberPresenter:0x0000010086b630 @number=2>,
           #<MyNumberPresenter:0x0000010086b540 @number=3>]
 
-###I have an array of objects, and I want to map them to the value they give from indexing into another object.
+### I have an array of objects, and I want to map them to the value they give from indexing into another object.
 
     require 'date'
     [1,2,3].map { |index| Date::ABBR_DAYNAMES[index] } # => ["Mon", "Tue", "Wed"]
@@ -53,7 +53,7 @@ then rock the house by requiring it. It sets itself up!
     [1,2,3].map_into Date::ABBR_DAYNAMES # => ["Mon", "Tue", "Wed"]
 
 
-###I have an array of objects, and I'd like to convert them using a given object's method.
+### I have an array of objects, and I'd like to convert them using a given object's method.
 
     class Converter
       def hellos(times)
@@ -79,7 +79,7 @@ then rock the house by requiring it. It sets itself up!
     converter.map_over [1,2,3], :hellos
     # => ["hello", "hellohello", "hellohellohello"]
 
-###I have an array of objects, and I'd like to sort them based on another enumerable.
+### I have an array of objects, and I'd like to sort them based on another enumerable.
 
     class Thingy
       def initialize(foo)
